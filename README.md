@@ -1,6 +1,7 @@
 Here it is the simple and basic E-Commerce Website using Flask.
 I learnt this from online tutor JIMSHAPECODING by online. After watching the entire video taught by him and practicing, I got an understanding about the flask. 
 it also made me to the next level.
+The Tutorial Link : https://www.youtube.com/watch?v=Qr4QMBUPxWo
 
 TECHNOLOGIES USED: Flask, Bootstrap, SQLAlchemy, DB Browser for SQLite. 
 
