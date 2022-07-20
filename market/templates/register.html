@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Registe Page
+{% endblock%}
+
+{% block content %}
+<body>
+    <div class="container">
+        <form action="" method="POST" class="form-register" style="color:white">
+            {{ form.hidden_tag() }}
+            <div class="text-center">
+                <br>
+                <img height=150px width=150px src="https://www.godpng.com/uploads/png/god-murugan-png-hd-images.png" alt="muruganlogo" class="mb-4">
+                    <h1 class="h3 mb-3 font-weight-normal">
+                        Please Create Your Account here
+                    </h1>
+                    <br>
+            </div>
+            {{ form.username.label() }}
+            {{ form.username(class="form-control", placeholder="User Name") }}
+            
+            {{ form.email_address.label() }}
+            {{ form.email_address(class="form-control", placeholder="Email Address") }}
+            
+            {{ form.password1.label() }}
+            {{ form.password1(class="form-control", placeholder="Password") }}
+            {{ form.password2.label() }}
+            {{ form.password2(class="form-control", placeholder="Confirm Password") }}
+
+            <br>
+            <div class="checkbox mb-3 text-center">
+                <h6>Do You have an Account</h6>
+                <a class="btn btn-sm btn-secondary" href="{{ url_for('login_page')}}">Login Here</a>
+            </div>
+            
+            {{form.submit(class="btn btn-lg btn-block btn-primary") }}
+        </form>
+    </div>
+</body> 
+    {% endblock %}
